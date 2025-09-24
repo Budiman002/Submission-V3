@@ -1,0 +1,28 @@
+{
+  "name": "openmusic_consumer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "consumer.js",
+  "scripts": {
+    "start": "node src/consumer.js",
+    "start-dev": "nodemon src/consumer.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-consumer": "node src/consumer.js",
+    "start-consumer-dev": "nodemon src/consumer.js"
+    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+
+  "dependencies": {
+    "amqplib": "^0.10.9",
+    "dotenv": "^17.2.2",
+    "nodemailer": "^7.0.6",
+    "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
