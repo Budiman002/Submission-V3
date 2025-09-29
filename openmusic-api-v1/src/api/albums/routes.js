@@ -25,12 +25,9 @@ const routes = (handler) => [
     handler: (request, h) => handler.postAlbumCoverHandler(request, h),
     options: {
       payload: {
-        output: 'stream',
-        parse: true,
         allow: 'multipart/form-data',
-        multipart: {
-          output: 'annotated',
-        },
+        multipart: true,
+        output: 'stream',
         maxBytes: 512000,
       },
     },

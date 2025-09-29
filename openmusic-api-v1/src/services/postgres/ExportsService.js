@@ -45,7 +45,6 @@ class ExportsService {
       playlist: {
         id: playlist.id,
         name: playlist.name,
-        owner: playlist.username,
         songs: songsResult.rows,
       },
     };
